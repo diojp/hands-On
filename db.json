@@ -1,8 +1,20 @@
 {
   "alunos": [
     {
-      "nome": "Patrícia Marcela Sara Novaes",
-      "matricula": "003",
+      "nome": "Nélio Frazão Chaves2123",
+      "matricula": "204764522",
+      "curso": "Sistemas para internet",
+      "id": 1
+    },
+    {
+      "nome": "Nélio Frazão Chaves",
+      "matricula": "2047645",
+      "curso": "Sistemas para internet",
+      "id": 2
+    },
+    {
+      "nome": "Nélio Frazão Chaves",
+      "matricula": "0031",
       "curso": "Sistemas para internet",
       "id": 3
     }
