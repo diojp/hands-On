@@ -64,7 +64,7 @@
           <form id="student-form" class="modal__form">
             <fieldset>
               <label for="nome">Nome</label>
-              <input type="text" placeholder="Nome do aluno..." name="nome" id="nome">
+              <input type="text" placeholder="Nome do aluno..." name="aluno" id="name">
               <label>Matrícula</label>
               <input type="text" placeholder="Matrícula" id="matricula" name="matricula">
               <label>Curso</label>
@@ -87,42 +87,54 @@
     <section class="section-wrapper">
       <header class="section-header">
         <h1 class="section-header__title">Disciplina</h1>
+        <button class="button button--success" onclick="createDisciplina()">Nova Discplina</button>
       </header>
       <div class="subject-list">
-        <div class="subject-card">
-          <h3 class="subject-card__title">Nome da disciplina</h3>
-          <hr />
-          <ul class="subject-card__list">
-            <li>carga horária: 16h</li>
-            <li>Professor: Pessoa da Silva</li>
-            <li>Status <span class="tag tag--danger">Obrigatória</span></li>
-          </ul>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        </div>
+       
 
-        <div class="subject-card">
-          <h3 class="subject-card__title">Nome da disciplina</h3>
-          <hr />
-          <ul class="subject-card__list">
-            <li>carga horária: 16h</li>
-            <li>Professor: Pessoa da Silva</li>
-            <li>Status <span class="tag tag--success">Opcional</span></li>
-          </ul>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-        </div>
-
-        <div class="subject-card">
-          <h3 class="subject-card__title">Nome da disciplina</h3>
-          <hr />
-          <ul class="subject-card__list">
-            <li>carga horária: 16h</li>
-            <li>Professor: Pessoa da Silva</li>
-            <li>Status <span class="tag tag--success">Opcional</span></li>
-          </ul>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        </div>
       </div>
+      <dialog class="modal" id="disciplina-modal">
+        <div class="modal__container">
+          <header class="modal__header">
+            <h3 id="disciplina-modal-title">Nova Disciplina</h3>
+          </header>
+          <form id="disciplina-form" class="modal__form">
+            <fieldset>
+              <label id="nomeLbl" for="nome">Disciplina</label>              
+              <input class="required" type="text" placeholder="Nome da disciplina..." name="nome" id="nome">              
+
+              <label id="cargaHorariaLbl" for="cargaHoraria">Carga Horária</label>
+              <input class="required" type="text" placeholder="Carga Horária" id="cargaHoraria" name="cargaHoraria">
+              <div id="cargaHorariaError" class="text-danger"></div>
+
+              <label id="professorLbl" for="professor">Professor</label>
+              <input class="required" type="text" placeholder="Professor" id="professor" name="professor">
+              
+
+              <label id="statusLbl" for="status">Status</label>
+              <select class="required" name="status" id="status">
+                <option value="">selecione</option>
+                <option value="Obrigatória">Obrigatória</option>
+                <option value="Opcional">Opcional</option>
+              </select>
+              
+
+              <label id="observacosLbl" for="observacos">Observações</label>
+              <input class="required" type="text" placeholder="Observações" id="observacos" name="observacos">
+              
+
+            </fieldset>
+            <div class="modal__form-buttons">
+              <button class="button button--danger" type="reset" onclick="closeDisciplinaModal()">
+                Cancelar
+              </button>
+              <button class="button button--success" type="submit" id="save-disciplina">Criar</button>
+            </div>
+          </form>
+        </div>
+      </dialog>
     </section>
+
   </main>
   <footer class="footer">
     <span>Lorem, ipsum dolor sit tenetur voluptatem quod!</span>

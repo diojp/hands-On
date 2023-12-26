@@ -1,22 +1,22 @@
 {
   "alunos": [
     {
-      "nome": "Nélio Frazão Chaves2123",
-      "matricula": "204764522",
-      "curso": "Sistemas para internet",
-      "id": 1
+      "id": 1,
+      "nome": "Laura Eliane Evelyn Gonçalves",
+      "matricula": "001",
+      "curso": "Sistemas para internet"
     },
     {
-      "nome": "Nélio Frazão Chaves",
-      "matricula": "2047645",
-      "curso": "Sistemas para internet",
-      "id": 2
+      "id": 2,
+      "nome": "Murilo Victor Bento Dias",
+      "matricula": "002",
+      "curso": "Redes"
     },
     {
-      "nome": "Nélio Frazão Chaves",
-      "matricula": "0031",
-      "curso": "Sistemas para internet",
-      "id": 3
+      "id": 3,
+      "nome": "Patrícia Marcela Sara Novaes",
+      "matricula": "003",
+      "curso": "Sistemas para internet"
     }
   ],
   "disciplinas": [
@@ -29,12 +29,12 @@
       "observacos": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
     },
     {
-      "id": 2,
-      "nome": "Fundamentos da Computação",
+      "nome": "Matemática",
       "cargaHoraria": "60h",
       "professor": "Marcela Vera Mendes",
-      "status": "Obrigatória",
-      "observacos": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+      "status": "Opcional",
+      "observacos": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      "id": 2
     },
     {
       "id": 2,
@@ -45,12 +45,20 @@
       "observacos": "Lorem ipsum dolor sit amet consectetur adipisicing."
     },
     {
-      "id": 3,
-      "nome": "Português Instrumental",
+      "nome": "Matemática Instrumental",
       "cargaHoraria": "50h",
       "professor": "Maitê Analu Carolina Aragão",
       "status": "Opcional",
-      "observacos": "Lorem ipsum dolor sit adipisicing elit."
+      "observacos": "Lorem ipsum dolor sit adipisicing elit.",
+      "id": 3
+    },
+    {
+      "nome": "Geografia",
+      "cargaHoraria": "20h",
+      "professor": "Diego Magno",
+      "status": "Opcional",
+      "observacos": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      "id": 4
     }
   ]
 }
